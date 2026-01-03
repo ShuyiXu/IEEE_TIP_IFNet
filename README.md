@@ -17,7 +17,7 @@ Small vehicles (SV) detection is crucial for urban security and traffic manageme
 ## IFNet
 Here, we provide the pytorch implementation of the paper: "A Hyperspectral Change Detection Method for Small Vehicles". 
 
-For more information, please see our published paper in [[IEEE](https://ieeexplore.ieee.org/document/11270006) ]  ***(Accepted by TIP 2025)***
+For more information, please see our published paper in [[IEEE](https://ieeexplore.ieee.org/document/11270006)]  ***(Accepted by TIP 2025)***
 
 ### Requirements
 ```python
