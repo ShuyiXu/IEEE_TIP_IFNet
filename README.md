@@ -10,8 +10,8 @@ Shuyi Xu, He Sun*✉, Xu Sun, Li Ni, and Lianru Gao
 Small vehicles (SV) detection is crucial for urban security and traffic management. However, detecting such targets from a single image presents significant challenges due to the difficulty in discerning their dynamic movements. In this paper, we propose a deep joint image-level and feature-level processing network, IFNet, designed for detecting changes in SV using bi-temporal hyperspectral images. At the image-level, a new Gumbel Softmax trick (GS)-based band selection strategy is introduced to address the problem of inconsistent spectral resolutions of bi-temporal images. At the feature-level, to tackle the challenge of capturing edge and shape details of SV, we propose a feature-based edge enhancement module, it can extract the target edge using high-level difference features, and the refined change map will be generated with the guidance of the edge map. Moreover, current deep learning-based hyperspectral change detection (HCD) methods are limited by HCD datasets. Therefore, we propose a benchmark dataset, the Hyperspectral Vehicle Change Detection (HVCD) dataset, which consists of 201 pairs of aerial hyperspectral images, each with a size of 256×256 , and exhibits inconsistent spectral resolutions across the bi-temporal data. Extensive experiments conducted on the HVCD dataset demonstrate that our IFNet obtains state-of-the-art performance with an acceptable computational cost.
 
 ## HVCD Dataset 
-
-
+Some example samples of HVCD dataset.
+<img width="1280" height="622" alt="HVCD" src="https://github.com/user-attachments/assets/067f98e6-13f9-407a-94c7-87f4d9f2ce11" />
 
 **Download [Link](https://ieeexplore.ieee.org/document/11270006)**
 
