@@ -12,12 +12,15 @@ Small vehicles (SV) detection is crucial for urban security and traffic manageme
 ## HVCD Dataset 
 
 
+
 **Download [Link](https://ieeexplore.ieee.org/document/11270006)**
 
 ## IFNet
 Here, we provide the pytorch implementation of the paper: "A Hyperspectral Change Detection Method for Small Vehicles". 
 
 For more information, please see our published paper in [[IEEE](https://ieeexplore.ieee.org/document/11270006)]  ***(Accepted by TIP 2025)***
+
+![HCD-SMT](https://github.com/user-attachments/assets/51595399-d4d8-4a73-97ca-e673901c7e9f)
 
 ### Requirements
 ```python
