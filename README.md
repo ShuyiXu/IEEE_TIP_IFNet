@@ -33,12 +33,12 @@ einops  0.3.0
 ### Train
 Make sure you performed the data preparation above. Then, start training as follows:
 ```python
-python train.py --model_name=IFNet --dataset=HVCD --gpu_ids=0 --batch_size=8 --step_size=200 
+python train.py --model_name=IFNet --dataset=HVCD --gpu_ids=0 --batch_size=8 --epoches=200 
 ```
 
 ### Test
 ```python
-python test.py --model_name=IFNet --dataset=HVCD --gpu_ids=0 --batch_size=8 --step_size=200 
+python test.py --model_name=IFNet --dataset=HVCD --gpu_ids=0 --batch_size=8 --epoches=200 
 ```
 
 ## Citation: 
