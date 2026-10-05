@@ -1,1 +1,0 @@
-from .IFNet import IFNet
