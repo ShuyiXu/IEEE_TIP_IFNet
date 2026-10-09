@@ -36,10 +36,10 @@ Make sure you performed the data preparation above. Then, start training as foll
 python train.py --model_name=IFNet --dataset=HVCD --gpu_ids=0 --batch_size=8 --epoches=200 
 ```
 
-### Test
+<!---### Test
 ```python
 python test.py --model_name=IFNet --dataset=HVCD --gpu_ids=0 --batch_size=8 --epoches=200 
-```
+```--->
 
 ## Citation: 
 ```
