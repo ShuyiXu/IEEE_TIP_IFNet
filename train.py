@@ -59,8 +59,8 @@ def main():
     scheduler = optim.lr_scheduler.StepLR(optimizer, step_size=args.step_size, gamma=args.gamma)
     num_epochs = args.epoches
     best_f1 = 0.0  # 初始化最佳F1 Score为0
-    # best_train_visualization_data = None  # 存储最佳训练集可视化数据
-    # best_test_visualization_data = None  # 存储最佳测试集可视化数据
+    # best_train_visualization_data = None  
+    # best_test_visualization_data = None  
     start_time = time.time()  # 记录开始时间
     for epoch in range(num_epochs):
         model.train()
@@ -83,7 +83,7 @@ def main():
                 print(message)
                 with open(os.path.join(args.expr_dir, 'loss.txt'), 'a') as opt_file:
                     opt_file.write(message + '\n')
-            # 保存当前batch的原图、标签和预测结果，用于在F1最优时的可视化
+
             _, predicted = torch.max(outputs.data, 1)
             current_train_visualization_data.append((t1.cpu().numpy().squeeze(),
                                                      t2.cpu().numpy().squeeze(),
@@ -94,12 +94,11 @@ def main():
         current_lr = optimizer.param_groups[0]['lr']
         print(f'Epoch [{epoch + 1}/{num_epochs}], Loss: {running_loss / len(train_dataloader):.4f}',
               f'Learning Rate: {current_lr:.6f}')
-        # 在测试集上评估模型
         model.eval()
         test_loss = 0.0
         all_preds = []
         all_labels = []
-        current_test_visualization_data = []  # 保存当前epoch的测试集可视化数据
+        current_test_visualization_data = []  
         ious = []
         with torch.no_grad():
             for t1, t2, labels in test_dataloader:
